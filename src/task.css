@@ -1,0 +1,61 @@
+.new__task {
+    display: flex;
+    justify-content: space-between;
+    width: 430px;
+    height: 75px;
+    background-color: #15101C;
+    border-radius: 10px;
+    align-items: center;
+}
+
+.new__task > p {
+    color: #9E78CF;
+    padding-left: 15px;
+    line-height: 20px;
+    font-size: 16px;
+}
+
+.task-done > p {
+    color: grey;
+    text-decoration: line-through;
+}
+
+.delete-button {
+    background-image: url(./assets/TrashSimple.svg);
+    width: 22px;
+    height: 22px;
+    background-repeat: no-repeat;
+    background-position: center;
+    outline: none;
+    border: none; 
+    cursor: pointer
+}
+
+.done-button {
+    background-image: url(./assets/Check.svg);
+    width: 22px;
+    height: 22px;
+    background-repeat: no-repeat;
+    background-position: center;
+    outline: none;
+    border: none; 
+    cursor: pointer
+}
+
+.delete-button, .done-button {
+    background-color: #15101C;
+}
+
+.delete-button:focus,
+.delete-button:active,
+.delete-button:hover {
+  border: none;
+  outline: none;
+}
+
+.done-button:focus,
+.done-button:active,
+.done-button:hover {
+  border: none;
+  outline: none;
+}

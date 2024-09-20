@@ -1,0 +1,75 @@
+body {
+  background: #0d0714;
+}
+
+#root {
+  max-width: 1400px;
+  margin: 0 auto;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.main {
+  width: 583px;
+  height: 758px;
+  border-radius: 20px;
+  background-color: #1D1825;
+}
+
+.todo__header {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 55px;
+}
+
+#addTask {
+  width: 360px;
+  height: 30px;
+  border: 1px solid #9E78CF;
+  border-radius: 20px;
+  background-color: #1D1825;
+  color: white;
+  line-height: 20px;
+  padding-left: 15px;
+  font-size: 16px;
+}
+
+textarea:focus, input:focus{
+  outline: none;
+  color: white;
+}
+
+.addTask__button {
+  border: none; 
+  cursor: pointer;
+  background-color: #9E78CF;
+  background-image: url(./assets/Plus.svg);
+  background-repeat: no-repeat;
+  background-size: cover; 
+  background-position: center;
+  outline: none; 
+}
+
+.addTask__button:focus,
+.addTask__button:active,
+.addTask__button:hover {
+  border: none;
+  outline: none;
+}
+
+#tasks__todo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50px;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.task-done {
+  color: grey;
+  text-decoration: line-through;
+}
